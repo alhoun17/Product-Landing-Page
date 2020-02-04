@@ -3,7 +3,8 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="landing-page.css">
+    <title>Wood Baseball Bats</title>
   </head>
   <body>
     <div id="wrapper">
@@ -17,7 +18,6 @@
         </div>
         <nav id="nav-bar">
           <ul>
-            <li><a class="nav-link" href="#home">Home</a></li>
             <li><a class="nav-link" href="#features">Features</a></li>
             <li><a class="nav-link" href="#how-its-made">How It's Made</a></li>
             <li><a class="nav-link" href="#pricing">Pricing</a></li>
@@ -25,7 +25,7 @@
         </nav>
       </header>
       <section id="hero">
-        <h2>High quality maple, ash and birch baseball bats</h2>
+        <h2>Highest quality maple, ash and birch baseball bats</h2>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
           <input
             type="email"
@@ -34,11 +34,27 @@
             placeholder="Enter your email address"
             required
           />
-          <input id="submit" type="submit" value="Get Started" />
+          <input id="submit" type="submit" value="Get Started" class="button" />
         </form>
       </section>
-      <div>
-        <section id="features"></section>
+      <div class="container">
+        <div id="features">
+          <div class="desc">
+            <h2>Premium Products</h2>
+            <p>Each model has a standard handle, standard barrel and max knob taper, along with a balanced swing weight. All models deliver for both contact and power hitters. All bats are made exclusively with MLB-grade wood from the top 3% of the harvest. Features coats of EXOARMOR, a state-of-the-art finish that gives a hardness to the bat you can feel and hear with every swing.</p>
+          </div>
+          <div class="desc">
+            <h2>Fast Shipping</h2>
+            <p>All custom made MLB quality bats ships directly from our factory as soon as completed. We provide free shipping for all items over $50 and offer a 30 day limited warranty.</p>
+          </div>
+          <div class="desc">
+            <h2>Quality Assurance</h2>
+            <p>
+              All bats are thoroghly inspected before shipping. Our team has applied its extensive wood bat knowledge to develop a product that, from knob to cup, is unmatched. Models feature an easy-to-read knob medallion embedded in the knob that indicates the MLB Prime grade of wood, the species and the length, while the bat name and production date is engraved in the surrounding area. These bats also now feature a Craftsman-Style Cup, created specifically to curb breakage and maintain hardness on contact. 
+            </p>
+          </div>
+          </section>
+        
         <section id="how-its-made">
           <iframe
             id="video"
@@ -50,7 +66,43 @@
             allowfullscreen
           ></iframe>
         </section>
-        <section id="pricing"></section>
+        <section id="pricing">
+          <div class="product" id="maple">
+            <div class="level">Maple Bats</div>
+            <h2>$149.95</h2>
+            <ol>
+
+              <li>Major League Baseball's most popular model</li>
+              <li>features a deep flame to distressed black finish with gold branding</li>
+              <li>A standard handle, standard barrel and max knob taper</li>
+              <li>along with a balanced swing weight</li>
+            </ol>
+            <input type="button" value="select">
+          </div>
+          <div class="product" id="ash">
+            <div class="level">Ash Bats</div>
+            <h2>$139.95</h2>
+            <ol>
+              
+              <li>This model combines an unfinished natural handle fading to a deep flame barrel with black Seamless Decals.</li>
+              <li>the base model used to create all standard barrel models</li>
+              <li>A standard handle, standard barrel and max knob taper</li>
+              <li>along with a balanced swing weight</li>
+            </ol>
+            <input type="button" value="select">
+          </div>
+          <div class="product" id="birch">
+            <div class="level">Birch Bats</div> 
+            <h2>$149.95</h2>
+            <ol>
+              <li>limited-edition original large barrel model</li>
+              <li>pays homage to the armed forces</li>
+              <li>features a matte army green and black fade design with a camouflage center brand</li>
+              <li>a never-before-seen military-inspired font style on the end brand</li>
+            </ol>
+            <input type="button" value="select">
+          </div>
+        </section>
       </div>
       <footer>
         <ul>
