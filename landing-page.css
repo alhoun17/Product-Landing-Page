@@ -45,7 +45,7 @@ a {
   text-decoration: none;
 }
 nav {
-  font-weight: 400;
+  font-weight: 600;
 }
 nav > ul {
   width: 35vw;
@@ -96,4 +96,94 @@ nav > ul {
 #features .desc {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  height: 150px;
+  width: 60vw;
+  padding: 10px;
+}
+
+.desc > p {
+  margin-top: 20px;
+  font-weight: 500;
+  text-align: justify;
+}
+#how-its-made {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+#how-its-made > iframe {
+  max-width: 650px;
+  width: 100%;
+}
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 5px solid #000;
+  border-radius: 5px;
+}
+
+.product > .level {
+  background-color: #ddd;
+  color: #000;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.product > h2 {
+  margin-top: 15px;
+}
+.product > ol {
+  margin: 15px 0;
+}
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > .buttons {
+  border: 0;
+  padding: 12px;
+  margin: 15px 0;
+  background-color: yellowgreen;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 5px solid #000;
+  border-radius: 3px;
+  font-size: 16px;
+}
+.product > .buttons:hover {
+  background-color: yellow;
+  transition: background-color 1s;
+}
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 40px;
+}
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 16px;
+  color: #444;
 }
