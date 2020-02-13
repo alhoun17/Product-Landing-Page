@@ -21,10 +21,13 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: azure;
 }
+
 .logo {
   width: 60vw;
 }
+
 .logo > img {
   height: 100%;
   width: 100%;
@@ -64,12 +67,24 @@ nav > ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 150px;
   height: 200px;
   text-align: center;
 }
 #hero > h2 {
   margin-bottom: 20px;
+}
+
+.button {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px solid black;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
 }
 
 #email {
@@ -91,6 +106,7 @@ nav > ul {
 }
 #submit:hover {
   background-color: yellow;
+  transition: background-color 1s;
 }
 
 #features .desc {
@@ -186,4 +202,71 @@ footer > span {
   justify-content: flex-end;
   font-size: 16px;
   color: #444;
+}
+@media (max-width: 600px) {
+    header {
+      flex-wrap: wrap;
+    }
+  }
+@media (max-width: 650px) {
+  .logo {
+      margin-top: 15px;
+      width: 100%;
+      position: relative;
+    }
+}
+@media (max-width: 650px) {
+    .logo > img {
+      margin: 0 auto;
+    }
+]
+@media (max-width: 650px) {
+    nav {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 50px;
+    }
+    nav li {
+      padding-bottom: 5px;
+    }
+}
+@media (max-width: 650px) {
+    nav > ul {
+      flex-direction: column;
+    }
+
+  }
+@media (max-width: 650px) {
+    #hero {
+      margin-top: 150px;
+    }
+}
+@media (max-width: 550px) {
+    #features .desc {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      height: 150px;
+    }
+}
+@media (max-width: 650px) {
+    #features {
+      margin-top: 0;
+      width: 100%;
+    }
+}
+@media (max-width: 800px){
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
 }
